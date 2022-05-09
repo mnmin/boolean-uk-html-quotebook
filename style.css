@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body, h1, h2, p {
+  margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 1rem;
+    color: purple;
+}
+
+p {
+    text-align: right;
+    font-style: italic;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    padding: 1rem;
+    color: ivory;
+}
+
+
+
+main {
+    display: grid;
+    grid-template-areas:
+    "header . ."
+    ". famous ."
+    ". music .";
+    grid-template-columns: 1fr 75ch 1fr;
+
+    gap: 5px;
+}
+
+footer {
+    padding: 1rem;
+    background-color: rgb(64, 64, 124);
+    color: white;
+    font-weight: bold;
+  }
+
+.header {
+    background-color: rgb(64, 64, 124);
+    color: white;
+    padding: 1rem;
+}
+
+.famous-people {
+    grid-area: famous;
+    margin-top: 2rem;
+    /*margin-bottom: 2rem;*/
+}
+
+.musician-quotes {
+    grid-area: music;
+}
+
+.uppercase-bold {
+    text-transform: capitalize;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-style: normal;
+    
+}
+
+.musician-uppercase-bold {
+    text-transform: capitalize;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-style: normal;  
+}
+
+.famous-people-card {
+    background-color: rgb(170, 170, 170);
+    border-radius: 2%;
+    
+}
+
+
+.musician-card {
+    background-color: rgb(50, 138, 205);
+    border-radius: 2%;
+}
+
+.font1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.font2 {
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.font3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.font4 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.font5 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.font6 {
+    font-family:'Courier New', Courier, monospace
+}
+
